@@ -1,0 +1,17 @@
+2026-04-05T13:13:20.001+03:00  INFO 2612 --- [HW1] [main] org.example.hw1.Hw1Application           : Starting Hw1Application using Java 22.0.1 with PID 2612 (C:\Users\lolim\Desktop\Study\IT STEP\Java Hw\21.03.2026\HW1\target\classes started by lolim in C:\Users\lolim\Desktop\Study\IT STEP\Java Hw\21.03.2026\HW1)
+2026-04-05T13:13:20.003+03:00  INFO 2612 --- [HW1] [main] org.example.hw1.Hw1Application           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05T13:13:20.537+03:00  INFO 2612 --- [HW1] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-05T13:13:20.547+03:00  INFO 2612 --- [HW1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05T13:13:20.547+03:00  INFO 2612 --- [HW1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-05T13:13:20.576+03:00  INFO 2612 --- [HW1] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 545 ms
+2026-04-05T13:13:20.846+03:00  INFO 2612 --- [HW1] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-05T13:13:20.849+03:00  INFO 2612 --- [HW1] [main] org.example.hw1.Hw1Application           : Started Hw1Application in 1.25 seconds (process running for 1.758)
+2026-04-05T13:13:21.306+03:00  INFO 2612 --- [HW1] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-05T13:13:21.306+03:00  INFO 2612 --- [HW1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-05T13:13:21.306+03:00  INFO 2612 --- [HW1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-04-05T13:13:21.339+03:00  INFO 2612 --- [HW1] [http-nio-8080-exec-1] org.example.hw1.LoggingAspect            : Заходимо в метод: sayHello
+2026-04-05T13:13:21.339+03:00  INFO 2612 --- [HW1] [http-nio-8080-exec-1] org.example.hw1.LoggingAspect            : Кількість заходів у метод sayHello: 1
+2026-04-05T13:13:21.339+03:00  INFO 2612 --- [HW1] [http-nio-8080-exec-1] org.example.hw1.LoggingAspect            : Виходимо з методу: sayHello
+2026-04-05T13:13:21.339+03:00  INFO 2612 --- [HW1] [http-nio-8080-exec-1] org.example.hw1.LoggingAspect            : Час виконання методу sayHello: 0 мс
+2026-04-05T13:13:36.796+03:00  INFO 2612 --- [HW1] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05T13:13:36.809+03:00  INFO 2612 --- [HW1] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
