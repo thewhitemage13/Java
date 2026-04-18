@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Список контактів</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        a, button {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+<h1>Список контактів</h1>
+
+<a href="/contacts/new">Додати контакт</a>
+
+<br><br>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>Телефон</th>
+        <th>Дії</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="contact : ${contacts}">
+        <td th:text="${contact.id}"></td>
+        <td th:text="${contact.firstName}"></td>
+        <td th:text="${contact.lastName}"></td>
+        <td th:text="${contact.phone}"></td>
+        <td>
+            <a th:href="@{/contacts/edit/{id}(id=${contact.id})}">Редагувати</a>
+
+            <form th:action="@{/contacts/delete/{id}(id=${contact.id})}"
+                  method="post"
+                  style="display:inline;">
+                <button type="submit">Видалити</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
